@@ -1,0 +1,53 @@
+<text class="text">请先选取您所在的位置，我们将根据您所在的位置信息推荐合适的土地供您选择</text>
+<view>{{mapName}}</view>
+<button bindtap="moveToLocation">位置选择</button>
+<swiper class="carousel" autoplay="true" interval="3000" duration="500">  
+    <swiper-item>  
+      <image src="/images/l1.png" class="carousel-image"></image>  
+    </swiper-item>  
+    <swiper-item>  
+      <image src="/images/l2.png" class="carousel-image"></image>  
+    </swiper-item>  
+    <swiper-item>  
+      <image src="/images/l3 .png" class="carousel-image"></image>  
+    </swiper-item>  
+  </swiper> 
+  <view class="head">
+  <input placeholder="商品价格，养殖技巧皆可查" bindinput="value"></input>
+  <image src="/images/search.png" bindtap="search"></image>
+</view> 
+  <view class="container">  
+  <view class="row">  
+    <view class="btn-container">  
+      <button class="btn" bindtap="switchTabPage1">  
+        <image class="btn-img" src="/images/tabs/home.png"></image>  
+        <text class="btn-txt">产品介绍</text>  
+      </button>  
+    </view>  
+    <view class="btn-container">  
+      <button class="btn" bindtap="switchTabPage2">  
+        <image class="btn-img" src="/images/tabs/good.png"></image>  
+        <text class="btn-txt">农场商城</text>  
+      </button>  
+    </view>  
+  </view>  
+  <view class="row">  
+    <view class="btn-container">  
+      <button class="btn" bindtap="switchTabPage3">  
+        <image class="btn-img" src="/images/tabs/message.png"></image>  
+        <text class="btn-txt">土地租赁</text>  
+      </button>  
+    </view>  
+    <view class="btn-container">  
+      <button class="btn" bindtap="switchTabPage4">  
+        <image class="btn-img" src="/images/tabs/contact.png"></image>  
+        <text class="btn-txt">情况查询</text>  
+      </button>  
+    </view>  
+  </view>  
+</view>
+ 
+  <view class="container2">
+  <button bindtap="onTapAbout" class="btn2">关于我们</button>
+</view>
+

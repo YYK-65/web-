@@ -1,0 +1,14 @@
+.container {  
+  padding: 20px;  
+}  
+  
+.title {  
+  font-size: 20px;  
+  font-weight: bold;  
+  color: rgb(17, 15, 15);  
+}  
+  
+.description {  
+  font-size: 16px;  
+  color: #666;  
+}

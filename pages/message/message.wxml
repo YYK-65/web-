@@ -1,0 +1,13 @@
+<text class="text">注意：请先在农产品选择栏目中完成确定云养殖的项目后进行土地的租赁</text>
+<view class="all">
+<view  wx:for="{{list}}">
+<view>
+<image src="{{item.image}}" mode="aspectFit"/>
+<image src="..\..\images\td1.png"></image>
+</view>
+<view>
+<text>{{item.name}}</text>
+<text>{{item.price}}</text>
+</view>
+</view>
+</view>

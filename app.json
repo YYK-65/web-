@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/good/good",
+    "pages/message/message",
+    "pages/contact/contact",
+    "pages/about/about",
+    "pages/addressList/index",
+    "pages/adderssAdd/index",
+    "pages/bindPhone/index",
+    "pages/order/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "掌农",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tabs/home.png"
+      },
+      {
+        "pagePath": "pages/good/good",
+        "text": "农产品选择",
+        "iconPath": "/images/tabs/good.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "土地租赁",
+        "iconPath": "/images/tabs/message.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "我的",
+        "iconPath": "/images/tabs/contact.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
