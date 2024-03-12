@@ -1,15 +1,13 @@
 // pages/good/good.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-     list:[]
+     list:[],
+     productList:[]
   },
     getlist(){
         wx.request({
-          url: 'http://127.0.0.1/news',
+            url: 'http://127.0.0.1/classify',
           method:'GET',
           success:(res)=>{
             console.log(res);
@@ -20,11 +18,26 @@ Page({
           }
         })
       },
+
+    getproductList(){
+          wx.request({
+              url: 'http://127.0.0.1/product',
+            method:'GET',
+            success:(res)=>{
+              console.log(res);
+             this.setData({
+                 productList: res.data
+             })
+             console.log(this.data.productList);
+            }
+          })
+        },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.getlist()
+    this.getproductList() 
   },
 
   /**

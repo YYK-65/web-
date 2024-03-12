@@ -10,6 +10,7 @@ Page({
    code:'',
    mobile:''
   },
+  
   bindKeyInput: function (e) {
     this.setData({
       mobile: e.detail.value

@@ -16,6 +16,5 @@
   进入可直接通过微信授权自动登录。
     </view>
   </view>
-
   <view class='btn active' bindtap='submitFun'>保存</view>
 </view>

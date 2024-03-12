@@ -17,6 +17,22 @@ app.get('/tudi',(req,res)=>{
   })
 })
 
+app.get('/classify',(req,res)=>{
+    const sqlstr = 'select * from classify'
+    db.query(sqlstr,(err,results)=>{
+      if (err) return console.log(err.message)
+      res.send(results)
+    })
+  })
+
+  app.get('/product',(req,res)=>{
+      const sqlstr = 'select * from product'
+      db.query(sqlstr,(err,results)=>{
+        if (err) return console.log(err.message)
+        res.send(results)
+      })
+    })
+
 app.listen(80,()=>{
   console.log("server running at http://127.0.0.1:80")
 })

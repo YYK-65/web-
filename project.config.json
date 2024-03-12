@@ -20,7 +20,7 @@
       "outputPath": ""
     },
     "uglifyFileName": true,
-    "ignoreUploadUnusedFiles": false,
+    "ignoreUploadUnusedFiles": true,
     "condition": true
   },
   "condition": {},

@@ -2,32 +2,28 @@
 <!-- 头部搜索区 -->
   <view class='search-bar'>
     <view class='search-box' bindtap='toSearchPage'>
-      <image src='../../images/icon/search.png' class='search-img'></image>
+      <image src='/images/search.png' class='search-img'></image>
       <text class='sear-input'>搜索您想要的商品</text>
     </view>
   </view>
 <!-- 滚动内容区 -->
   <view class="main">
+  
     <!-- 左侧菜单start -->
     <scroll-view scroll-y="true" class='leftmenu'>
-      <block wx:for='{{list}}' wx:key=''>
+      <view wx:for="{{list}}" >
         <view class='menu-item {{selIndex==index?"active":""}} ' data-index="{{index}}" data-id="{{item.id}}" bindtap='onMenuTab'>
           {{item.name}}
         </view>
-      </block>
+      </view>
     </scroll-view>
     <!-- 左侧菜单end -->
 
     <!-- 右侧内容start -->
     <scroll-view scroll-y="true" class='rightcontent' scroll-into-view="{{toViewId}}">
-    <!-- <block wx:for='{{ productList}}' wx:key=''> -->
-      <view class='adver-map'>
-        <view class='item-a'>
-            <image src='{{categoryImg}}' mode='widthFix'></image>
-        </view>
-      </view>
+
       <view class='cont-item'>
-        <block wx:for='{{productList}}' wx:key=''>
+        <block wx:for="{{productList}}" wx:key="">
           <view class='show-item'  bindtap='toProdPage' data-prodid="{{item.prodId}}">
             <view class='more-prod-pic'>
               <image src='{{item.pic}}' class='more-pic'mode='widthFix'></image>
